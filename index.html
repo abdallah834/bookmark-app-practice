@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+    <!-- <link rel="stylesheet" href="css/all.min.css" /> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <!-- <script src="js/all.min.js" defer></script> -->
+    <script
+      src="https://kit.fontawesome.com/2b71bd5fd3.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/index.js" defer></script>
+  </head>
+  <body>
+      <div class="input-alert d-none">
+        <div class="bg-color"></div>
+        <div class="alert-modal d-flex flex-column p-4 gap-4">
+          <div class="circles-container d-flex flex-row justify-content-between ">
+            <div class=" d-flex flex-row gap-2">
+          <div class="circles crl1 rounded-circle"></div>
+          <div class="circles crl2 rounded-circle"></div>
+          <div class="circles crl3 rounded-circle"></div></div>
+          <div class="exit-alert"><i class="fa-solid fa-x fs-4"></i></div>
+        </div>
+          <p class="mt-2">Site Name or Url is not valid, Please follow the rules below :</p>
+          <ul class="mt-2">
+            <li class="d-flex flex-row align-items-center">
+              <i class="fa-regular fa-circle-right p-2"></i>
+              <p>Site name must contain at least 3 characters</p> 
+            </li>
+            <li class="d-flex flex-row align-items-center">
+              <i class="fa-regular fa-circle-right p-2"></i>
+              <p>Site URL must be a valid one</p> 
+            </li>
+          </ul>
+        </div>
+      </div>
+    <div class="container">
+
+      <div class="row row-cols-1">
+        <div class="col logo-col">
+          <h1 class="my-5">Bookmarker</h1>
+        </div>
+        <div class="col input-col py-5 d-flex flex-column justify-content-center align-items-center gap-3">
+          <h2>
+            <i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites
+            <i class="fa-solid fa-bookmark"></i>
+          </h2>
+          <div class="mb-3 w-100">
+            <label for="exampleFormControlInput1" class="form-label text-center ">
+            <i class="fa-solid fa-book-bookmark me-1"></i> Site Name</label
+            >
+            <input
+              type="email"
+              class="form-control site-title"
+              id="exampleFormControlInput1"
+              placeholder="Bookmark Name"
+            />
+          </div>
+          <div class="mb-3 w-100">
+            <label for="exampleFormControlInput1" class="form-label text-center "
+              ><i class="fa-solid fa-link me-1"></i> Site URL</label
+            >
+            <input
+              type="email"
+              class="form-control site-link"
+              id="exampleFormControlInput2"
+              placeholder="Website Name"
+            />
+          </div>
+          <button class="d-block py-2 px-5 add-btn"type="button">Submit</button>
+        </div>
+        <div class="col sites-col">
+          <div class="site-info d-flex justify-content-between flex-row mt-4">
+            <span>Index</span>
+            <span>Website Name</span>
+            <span>Visit</span>
+            <span>Delete</span>
+          </div>
+          <div class="site-container"></div>
+          <!-- <div class="site-details d-flex flex-row justify-content-between">
+              <span class="ms-3">1</span>
+              <span  class="site-name">google</span>
+              <button class="visit-btn"><i class="fa-solid fa-eye"></i> Visit</button>
+              <button class="del-btn"><i class="fa-solid fa-trash"></i> Delete</button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

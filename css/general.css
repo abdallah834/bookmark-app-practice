@@ -1,0 +1,13 @@
+body {
+  background-color: #f7ecde;
+}
+body::selection {
+  background-color: #fec260;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+p {
+  margin: 0;
+}
